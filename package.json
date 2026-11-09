@@ -1,0 +1,31 @@
+{
+  "name": "gate-android",
+  "version": "1.0.0",
+  "description": "GATE Command Center companion (Android, Capacitor)",
+  "main": "index.js",
+  "scripts": {
+    "build": "vite build",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "cap": "cap",
+    "sync": "vite build && cap sync android",
+    "check": "npm run typecheck && npm test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@capacitor-community/sqlite": "^8.1.1",
+    "@capacitor/android": "^8.6.0",
+    "@capacitor/core": "^8.6.0",
+    "@gate-cc/core": "file:vendor/gate-core",
+    "@supabase/supabase-js": "^2.119.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.6.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.7",
+    "vitest": "^5.1.0"
+  },
+  "type": "module"
+}
