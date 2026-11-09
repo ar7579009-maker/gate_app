@@ -3,3 +3,4 @@ node_modules/
 dist/
 android/app/build/
 android/.gradle/
+vendor/gate-core/node_modules/
